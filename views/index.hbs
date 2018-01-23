@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODO list</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <style>
+    main {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .active {
+      transition: all .3s ease;
+    }
+    li i {
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    li i.done {
+      content: '';
+      width: 1.2em;
+      height: 1.2em;
+      margin-top: -4px;
+      border: 2px solid #26a69a;
+    }
+    .done {
+      color: rgba(38, 166, 154, 0);
+      transition: all .3s ease;
+    }
+    .done.active {
+      color: rgba(38, 166, 154, 1);
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>Todo list</h1>
+    <form class="item input-field">
+      <input id="item" type="text" class="validate">
+      <label for="item">Add item</label>
+    </form>
+    <ul class="collection"></ul>
+  </main>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script>axios.defaults.headers.common['csrf-token'] = '{{csrf}}';</script>
+  <script src="javascript.js"></script>
+</body>
+</html>

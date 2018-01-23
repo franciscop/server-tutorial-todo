@@ -1,0 +1,30 @@
+{
+  "name": "server-tutorial-todo",
+  "version": "1.0.0",
+  "description": "Code for the TODO tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscop/server-tutorial-todo.git"
+  },
+  "keywords": [
+    "server.js",
+    "tutorial",
+    "todo"
+  ],
+  "author": "Francisco Presencia <public@francisco.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franciscop/server-tutorial-todo/issues"
+  },
+  "homepage": "https://github.com/franciscop/server-tutorial-todo#readme",
+  "dependencies": {
+    "mongoose": "^4.10.7",
+    "server": "^1.0.12",
+    "supertest": "^3.0.0"
+  }
+}
