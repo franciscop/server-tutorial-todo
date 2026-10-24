@@ -24,7 +24,7 @@ describe('Website', () => {
         .expect(200)
         .expect('Content-Type', /text\/html/)
         .then(response => {
-          expect(response.text).toMatch(/\<h1\>TODO list<\/h1>/i);
+          expect(response.text).toMatch(/<h1>TODO list<\/h1>/i);
         });
     });
   });

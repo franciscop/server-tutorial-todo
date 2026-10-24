@@ -7,7 +7,7 @@ const { render } = server.reply;
 const todo = require('./todo.js');
 
 // Render the homepage for `/`
-const home = get('/', ctx => render('index.hbs'));
+const home = get('/', () => render('index.hbs'));
 
 // Add some API endpoints
 const api = [

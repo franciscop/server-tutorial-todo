@@ -1,8 +1,8 @@
 // todo.js
-const { status, json } = require('server/reply');
+const { status } = require('server/reply');
 const Todo = require('./model');
 
-exports.read = async (ctx) => {
+exports.read = async () => {
   return Todo.find().sort('done').lean().exec();
 };
 exports.create = async (ctx) => {
