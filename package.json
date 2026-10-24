@@ -3,30 +3,28 @@
   "version": "1.0.0",
   "description": "Code for the TODO tutorial",
   "private": true,
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "jest",
-    "lint": "oxlint index.js model.js todo.js test.js"
-  },
   "repository": "github:franciscop/server-tutorial-todo",
+  "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
+  "funding": "https://www.paypal.me/franciscopresencia/19",
+  "license": "MIT",
   "keywords": [
     "server.js",
     "tutorial",
     "todo"
   ],
-  "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/franciscop/server-tutorial-todo/issues"
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "oxlint index.js model.js todo.js test.js"
   },
-  "homepage": "https://github.com/franciscop/server-tutorial-todo#readme",
+  "main": "index.js",
   "dependencies": {
     "mongoose": "^4.10.7",
     "server": "^1.0.12",
     "supertest": "^3.0.0"
   },
   "devDependencies": {
+    "jest": "^30.5.2",
     "oxlint": "^1.89.0"
   }
 }
